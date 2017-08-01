@@ -69,7 +69,7 @@ sub gssapi_verify {
 		$gss_input_token,
 		GSS_C_NO_CHANNEL_BINDINGS,
 		my $gss_client_name,
-		my $out_mech,
+		undef,
 		my $gss_output_token,
 		my $out_flags,
 		my $out_time,
