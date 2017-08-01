@@ -1,5 +1,5 @@
 package Plack::Middleware::Auth::Negotiate;
-
+$Plack::Middleware::Auth::Negotiate::VERSION = '0.172130';
 # ABSTRACT: Negotiate authentication middleware (SPNEGO)
 
 use 5.006;
@@ -99,6 +99,23 @@ sub gss_exit {
 	return;
 }
 
+
+1; # End of Plack::Middleware::Auth::Negotiate
+
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Plack::Middleware::Auth::Negotiate - Negotiate authentication middleware (SPNEGO)
+
+=head1 VERSION
+
+version 0.172130
+
 =head1 SYNOPSIS
 
     use Plack::Builder;
@@ -168,6 +185,16 @@ L<GSSAPI>, mod_auth_kerb
 This code is based off of L<Plack::Middleware::Auth::Basic> and a sample script
 provided with L<GSSAPI>.
 
-=cut
+=head1 AUTHOR
 
-1; # End of Plack::Middleware::Auth::Negotiate
+Adrian Kreher <avuserow@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2011 by Adrian Kreher <avuserow@cpan.org>.
+
+This is free software, licensed under:
+
+  The (three-clause) BSD License
+
+=cut
