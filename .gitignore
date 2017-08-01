@@ -1,1 +1,5 @@
-ignore.txt
+.build*
+.lwpcookies
+cover_db
+pod2htm*.tmp
+Plack-Middleware-Auth-Negotiate-*
